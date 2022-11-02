@@ -1,4 +1,21 @@
 *{
   margin: 0;
   padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.container{
+  width: 90%;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.blueText{
+  color: #00F0FD;
+  text-shadow: 0 0 4px #39f3fd;
+}
+
+a{
+  color: white;
+  text-decoration: none;
 }

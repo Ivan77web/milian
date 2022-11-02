@@ -1,0 +1,229 @@
+.structure{
+    width: 100%;
+    display: flex;
+    height: 1000px;
+    background: #101010;
+    color: white;
+}
+
+.structureBlock{
+    position: relative;
+    width: 100%;
+}
+
+.intro{
+    position: relative;
+    padding-top: 134px;
+}
+
+.introText{
+    position: absolute;
+    display: flex;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 67px;
+    color: white;
+}
+
+.tail{
+    position: relative;
+    top: 50px;
+    left: 154px;
+    width: 71px;
+    height: 803px;
+}
+
+.line{
+    position: absolute;
+    width: 9px;
+    height: 700px;
+    background: #00F0FD;
+    box-shadow: 0 0 4px #39f3fd;
+}
+
+.circle{
+    position: absolute;
+    width: 33px;
+    height: 33px;
+    top: 688px;
+    left: -12px;
+    background: #00F0FD;
+    border-radius: 100%;
+    box-shadow: 0 0 4px #39f3fd;
+}
+
+.smallLine{
+    position: absolute;
+    top: 100px;
+    width: 58px;
+    height: 5px;
+    background: #00F0FD;
+    box-shadow: 0 0 4px #39f3fd;
+}
+
+.cmallCircle{
+    position: absolute;
+    top: 95px;
+    left: 56px;
+    width: 15px;
+    height: 15px;
+    background: #00F0FD;
+    border-radius: 100%;
+    box-shadow: 0 0 4px #39f3fd;
+}
+
+.enum{
+    position: absolute;
+    top: 250px;
+    left: 300px;
+}
+
+.one_Enum{
+    line-height: 100px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 80px;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 980px) {
+    .structure{
+        height: 980px;
+    }
+
+    .line{
+        height: 700px;
+    }
+
+    .circle{
+        top: 688px;
+    }
+
+    .enum{
+        top: 250px;
+        left: 260px;
+    }
+    
+    .one_Enum{
+        font-size: 24px;
+        line-height: 80px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .structure{
+        height: 950px;
+    }
+
+    .line{
+        height: 640px;
+    }
+
+    .circle{
+        top: 628px;
+    }
+
+    .enum{
+        top: 260px;
+        left: 260px;
+    }
+    
+    .one_Enum{
+        font-size: 24px;
+        line-height: 64px;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .structure{
+        height: 820px;
+    }
+
+    .intro{
+        padding-top: 54px;
+    }
+
+    .introText{
+        font-size: 40px;
+    }    
+
+    .tail{
+        top: 46px;
+        left: 112px;
+    }
+
+    .line{
+        width: 7px;
+        height: 600px;
+    }
+
+    .circle{
+        top: 588px;
+        left: -13px;
+    }
+
+    .enum{
+        top: 166px;
+        left: 210px;
+    }
+    
+    .one_Enum{
+        font-size: 20px;
+        line-height: 64px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .structure{
+        height: 730px;
+    }
+
+    .intro{
+        width: 100%;
+    }
+
+    .introText{
+        position: relative;
+        font-size: 40px;
+        width: fit-content;
+        margin: 0 auto;
+        text-align: center;
+    }  
+
+    .tail{
+        display: none;
+    }
+
+    .enum{
+        position: relative;
+        left: 0;
+        top: 30px;
+    }
+    
+    .one_Enum{
+        text-align: center;
+        font-size: 20px;
+        line-height: 64px;
+    }
+}
+
+@media screen and (max-width: 455px) {
+    .structure{
+        height: 730px;
+    }
+
+    .introText{
+        font-size: 30px;
+    }  
+
+    .enum{
+        top: 30px;
+    }
+    
+    .one_Enum{
+        font-size: 16px;
+    }
+}

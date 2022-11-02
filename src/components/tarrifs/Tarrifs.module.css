@@ -1,0 +1,549 @@
+.tarrifs{
+    width: 100%;
+    height: 1500px;
+    background: #101010;
+    color: white;
+    padding-top: 124px;
+}
+
+.twoTarrifs{
+    position: relative;
+}
+
+.title{
+    position: relative;
+    top: 0;
+    left: 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 55px;
+}
+
+.tail{
+    position: absolute;
+    top: 46px;
+    left: calc(-200% + 8px);
+    height: 7px;
+    width: 200%;
+    background: #00F0FD;
+    box-shadow: 0 0 4px #39f3fd;
+}
+                    
+.variants{
+    display: flex;
+}
+
+.small{
+    position: absolute;
+    left: 0;
+    top: 316px;
+    width: 40%;
+    height: fit-content;
+    border: 5px solid #00F0FD;
+    border-radius: 44px;
+    padding-top: 30px;
+    box-shadow: 0 0 4px #39f3fd;
+}
+
+.bigTitle{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    margin-left: 48px;
+    margin-bottom: 30px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.options{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    font-size: 22px;
+    line-height: 36px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 48px;
+}
+
+.line{
+    width: 153px;
+    height: 2px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-left: 48px;
+    background: #00F0FD;
+    box-shadow: 0 0 4px #39f3fd;
+}
+
+.valuation{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 10px;
+    margin-left: 48px;
+}
+
+.valuePrice{
+    margin-left: 48px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 48px;   
+}
+
+.closeShop{
+    margin-left: 48px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 48px;   
+}
+
+.comment{
+    margin-top: 10px;
+    margin-left: 48px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    opacity: 0.5;
+}
+
+.number{
+    margin-top: 10px;
+    margin-left: 48px;
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+.increasePrice{
+    width: 362px;
+    height: 90px;
+    border: 2px solid #58a7ac;
+    border-radius: 19px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.increaseTextSmall{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 45px;  
+}
+
+.increaseTextBig{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 45px;
+}
+
+.big{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 55%;
+    height: fit-content;
+    border: 5px solid #00F0FD;
+    border-radius: 44px;
+    padding-top: 30px;
+    box-shadow: 0 0 4px #39f3fd;
+}
+
+.introMini{
+    margin-left: 20px;
+}
+
+.options_one{
+    margin-bottom: 50px;
+}
+
+.prize{
+    position: absolute;
+    right: 0;
+    top: 1040px;
+    display: flex;
+    Width: 525px;
+    height: 325px;
+    border: 5px solid #00F0FD;
+    border-radius: 44px;
+    box-shadow: 0 0 4px #39f3fd;
+}
+
+.prizeText{
+    width: 380px;
+}
+
+.plus{
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 116px;
+    height: 116px;
+}
+
+.one{
+    position: absolute;
+    top: 48px;
+    width: 116px;
+    height: 20px;
+    background: #00F0FD;
+    box-shadow: 0 0 4px #39f3fd;
+}
+
+.two{
+    position: absolute;
+    left: 48px;
+    height: 116px;
+    width: 20px;
+    background: #00F0FD;
+    box-shadow: 0 0 4px #39f3fd;
+}
+
+.text{
+    left: 300px;
+    top: 130px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 36px;
+    text-align: right;
+}
+
+.microIMG{
+    position: absolute;
+    right: 30px;
+    top: 0;
+    height: 300px;
+    width: auto;
+    margin-top: 20px;
+}
+
+.data{
+    position: absolute;
+    top: 1040px;
+    width: 562px;
+    height: 196px;
+    border: 5px solid #00F0FD;
+    box-shadow: 0 0 4px #39f3fd;
+    border-radius: 44px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.start{
+    margin-left: 18px;
+    font-size: 25px;
+    margin-top: 38px;
+    margin-bottom: 20px;
+}
+
+.textDate{
+    margin-left: 18px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.date{
+    margin-left: 18px;
+    font-size: 22px;
+}
+
+@media screen and (max-width: 1340px) {
+    .tarrifs{
+        width: 100%;
+        height: 2550px;
+        background: #101010;
+        color: white;
+        padding-top: 124px;
+    }
+
+    .variants{
+        display: block;
+    }
+
+    .small{
+        position: relative;
+        left: 0;
+        top: 0px;
+        width: 500px;
+        height: fit-content;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    
+    .big{
+        position: relative;
+        left: 0;
+        top: 0px;
+        width: 600px;
+        height: fit-content;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+    .prize{
+        position: relative;
+        left: 0;
+        top: 0px;
+        Width: 500px;
+        height: 325px;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+    .data{
+        position: relative;
+        left: 0;
+        top: 0px;
+        width: 500px;
+        height: 196px;
+        margin: 0 auto;
+        margin-top: 30px;       
+    }     
+}
+
+@media screen and (max-width: 770px) {
+    .tarrifs{
+        height: 2450px;
+    }
+
+    .small{
+        position: relative;
+        left: 0;
+        top: 0px;
+        width: 380px;
+        height: fit-content;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+
+    .bigTitle{
+        margin: 0;
+        font-size: 50px;
+        text-align: center;
+    }
+    
+    .options{
+        font-size: 18px;
+        line-height: 36px;
+    }
+    
+    .line{
+        width: 200px;
+        margin: 0 auto;
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+    
+    .valuation{
+        font-size: 30px;
+    }
+    
+    .valuePrice{
+        font-size: 35px;
+    }
+    
+    .comment{
+        font-size: 16px;
+    }
+    
+    .number{
+        font-size: 16px;
+    }
+    
+    .increasePrice{
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    
+    .increaseTextSmall{
+        font-size: 18px;
+    }
+    
+    .increaseTextBig{
+        font-size: 22px;
+    }
+    
+    .big{
+        position: relative;
+        left: 0;
+        top: 0px;
+        width: 450px;
+        height: fit-content;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    
+    .options_one{
+        margin-bottom: 30px;
+    }
+
+    .prize{
+        Width: 380px;
+    }
+
+    .prizeText{
+        width: 55%;
+    }
+    
+    .plus{
+        left: 22%;
+        width: 80px;
+        height: 80px;
+    }
+    
+    .one{
+        top: 35px;
+        width: 80px;
+        height: 10px;
+    }
+    
+    .two{
+        left: 35px;
+        height: 80px;
+        width: 10px;
+    }
+    
+    .text{
+        font-size: 14px;
+    }
+
+    .data{
+        width: 380px;
+    }
+    
+    .start{
+        font-size: 18px;
+    }
+    
+    .textDate{
+        font-size: 16px;
+    }
+    
+    .date{
+        margin-left: 18px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .tarrifs{
+        height: 2000px;
+    }
+
+    .title{
+        font-size: 40px;
+    }
+    
+    .tail{
+        top: 34px;
+        left: calc(-200% + 8px);
+        height: 5px;
+    }
+
+    .small{
+        width: 300px;
+    }
+
+    .bigTitle{
+        font-size: 30px;
+    }
+    
+    .options{
+        font-size: 16px;
+        margin-top: 10px;
+        margin-left: 20px;
+        line-height: 20px;
+    }
+    
+    .line{
+        margin-bottom: 20px;
+    }
+    
+    .valuation{
+        font-size: 22px;
+        margin-bottom: 0;
+        margin-left: 20px;
+    }
+    
+    .valuePrice{
+        font-size: 24px;
+        margin-left: 20px;
+    }
+    
+    .comment{
+        margin-top: 0;
+        margin-left: 20px;
+        font-size: 16px;
+    }
+    
+    .number{
+        font-size: 16px;
+        margin-top: 5px;
+        margin-left: 20px;
+    }
+    
+    .increasePrice{
+        height: 70px;
+    }
+    
+    .increaseTextSmall{
+        line-height: 35px;
+        font-size: 14px;
+    }
+    
+    .increaseTextBig{
+        line-height: 35px;
+        font-size: 18px;
+    }
+    
+    .big{
+        width: 300px;
+    }
+
+    .prize{
+        width: 300px;
+    }
+
+    .microIMG{
+        right: 30px;
+        top: 0;
+        height: 240px;
+        width: auto;
+        margin-top: 45px;
+    }
+    
+    .data{
+        width: 300px;
+    }
+    
+    .start{
+        font-size: 16px;
+    }
+    
+    .textDate{
+        font-size: 14px;
+    }
+    
+    .date{
+        font-size: 18px;
+    }
+}
+
