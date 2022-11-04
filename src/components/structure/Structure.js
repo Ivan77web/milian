@@ -1,20 +1,42 @@
+import { motion } from "framer-motion";
 import React from "react";
 import cl from "./Structure.module.css"
 
 const Structure = () => {
+    const elemAnimation = {
+        hidden: {
+            opacity: 0
+        },
+
+        visible: {
+            opacity: 1
+        }
+    }
+
     return (
-        <div className={cl.structure}>
+        <motion.div 
+            className={cl.structure}
+            initial="hidden"
+            whileInView="visible"
+        >
             <div className="container">
                 <div className={cl.structureBlock}>
                     
                     <div className={cl.intro}>
                         <div className={cl.introText}> <p className="blueText">СТРУКТУРА &nbsp;</p> КУРСА</div>
-                        <div className={cl.tail}>
+                        <motion.div 
+                            className={cl.tail}
+                            variants={elemAnimation}
+
+                            transition={{
+                                duration: 2
+                            }}
+                        >
                             <div className={cl.line} />
                             <div className={cl.circle} />
                             <div className={cl.smallLine} />
                             <div className={cl.cmallCircle} />
-                        </div>
+                        </motion.div>
                     </div>
 
                     <div className={cl.enum}>
@@ -29,7 +51,7 @@ const Structure = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

@@ -1,10 +1,18 @@
+import { motion } from "framer-motion";
 import React from "react";
 import cl from "./Header.module.css"
 
 const Header = () => {
     return(
         <div className={cl.header}>
-            <div className={cl.logo}>
+            <motion.div 
+                className={cl.logo}
+                initial={{opacity: 0}}
+                animate={{opacity: 1}}
+
+                transition={{duration: 2}}
+
+            >
                 <div className={cl.bigLetter}>М</div>
 
                 <div className={cl.words}>
@@ -14,7 +22,7 @@ const Header = () => {
                 </div>
 
                 <p className={"blueText " + cl.star}>*</p>
-            </div>
+            </motion.div>
         </div>
     )
 }

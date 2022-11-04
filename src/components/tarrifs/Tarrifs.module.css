@@ -1,5 +1,6 @@
 .tarrifs{
     width: 100%;
+    overflow-y: hidden;
     height: 1500px;
     background: #101010;
     color: white;
@@ -34,15 +35,14 @@
 }
 
 .small{
-    position: absolute;
-    left: 0;
-    top: 316px;
+    margin-top:auto;
     width: 40%;
     height: fit-content;
     border: 5px solid #00F0FD;
     border-radius: 44px;
     padding-top: 30px;
     box-shadow: 0 0 4px #39f3fd;
+    margin-right: 5%;
 }
 
 .bigTitle{
@@ -152,9 +152,6 @@ li{
 }
 
 .big{
-    position: absolute;
-    top: 0;
-    right: 0;
     width: 55%;
     height: fit-content;
     border: 5px solid #00F0FD;
@@ -171,12 +168,16 @@ li{
     margin-bottom: 50px;
 }
 
-.prize{
-    position: absolute;
-    right: 0;
-    top: 1040px;
+.info{
     display: flex;
-    Width: 525px;
+    margin-top: 50px;
+}
+
+.prize{
+    position: relative;
+    display: flex;
+    width: 55%;
+    margin-right: 5%;
     height: 325px;
     border: 5px solid #00F0FD;
     border-radius: 44px;
@@ -228,16 +229,13 @@ li{
 .microIMG{
     position: absolute;
     right: 30px;
-    top: 0;
     height: 300px;
     width: auto;
     margin-top: 20px;
 }
 
 .data{
-    position: absolute;
-    top: 1040px;
-    width: 562px;
+    width: 40%;
     height: 196px;
     border: 5px solid #00F0FD;
     box-shadow: 0 0 4px #39f3fd;
@@ -267,13 +265,17 @@ li{
 @media screen and (max-width: 1340px) {
     .tarrifs{
         width: 100%;
-        height: 2550px;
+        height: 2450px;
         background: #101010;
         color: white;
         padding-top: 124px;
     }
 
     .variants{
+        display: block;
+    }
+
+    .info{
         display: block;
     }
 
@@ -320,7 +322,7 @@ li{
 
 @media screen and (max-width: 770px) {
     .tarrifs{
-        height: 2450px;
+        height: 2350px;
     }
 
     .small{

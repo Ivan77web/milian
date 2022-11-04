@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import cl from "./Tarrifs.module.css"
 import micro from "../../img/prize.png"
+import { motion } from "framer-motion";
 
 const Tarrifs = () => {
     const date = new Date();
@@ -13,6 +14,40 @@ const Tarrifs = () => {
     const [increasePriceDay, setIncreasePriceDay] = useState(0);
     const [increasePriceHour, setIncreasePriceHour] = useState(0);
     const [commentData, setCommentData] = useState("");
+
+    const titleAnimation = {
+        hidden: {
+            x: -500
+        },
+
+        visible: {
+            x: 0
+        }
+    }
+
+    const cardAnimationLeft = {
+        hidden: {
+            x: -500,
+            opacity: 0
+        },
+
+        visible: {
+            x: 0,
+            opacity: 1
+        }
+    }
+
+    const cardAnimationRight = {
+        hidden: {
+            x: 500,
+            opacity: 0
+        },
+
+        visible: {
+            x: 0,
+            opacity: 1
+        }
+    }
 
     const correctWordDay = (day) => {
         if (day) {
@@ -79,19 +114,36 @@ const Tarrifs = () => {
     }, [])
 
     return (
-        <div className={cl.tarrifs}>
+        <motion.div
+            className={cl.tarrifs}
+            initial="hidden"
+            whileInView="visible"
+        >
             <div className={"container " + cl.twoTarrifs}>
-                <div className={cl.title}>
+                <motion.div
+                    className={cl.title}
+                    variants={titleAnimation}
+
+                    transition={{
+                        duration: .8
+                    }}
+                >
                     <div>
                         <p className="blueText">УРОВЕНЬ</p>
                         ДОСТУПА
                     </div>
 
                     <div className={cl.tail} />
-                </div>
+                </motion.div>
 
                 <div className={cl.variants}>
-                    <div className={cl.small}>
+                    <motion.div 
+                        className={cl.small}
+                        variants={cardAnimationLeft}
+                        transition={{
+                            duration: 1
+                        }}
+                    >
                         <div>
                             <p className={cl.bigTitle}><span className="blueText">Б</span>ЕДОЛ </p>
                         </div>
@@ -153,9 +205,15 @@ const Tarrifs = () => {
                                 :
                                 <div />
                         }
-                    </div>
+                    </motion.div>
 
-                    <div className={cl.big}>
+                    <motion.div 
+                        variants={cardAnimationRight}
+                        className={cl.big}
+                        transition={{
+                            duration: 1
+                        }}
+                    >
                         <div>
                             <p className={cl.bigTitle}><span className="blueText">Д</span>УМИНАТОР </p>
                         </div>
@@ -228,40 +286,54 @@ const Tarrifs = () => {
                                 <div />
                         }
 
-                    </div>
+                    </motion.div>
                 </div>
 
-                <div className={cl.prize}>
-                    <div className={cl.prizeText}>
-                        <div className={cl.plus}>
-                            <div className={cl.one} />
-                            <div className={cl.two} />
+                <div className={cl.info}>
+                    <motion.div 
+                        className={cl.prize}
+                        variants={cardAnimationLeft}
+                        transition={{
+                            duration: 1
+                        }}
+                    >
+                        <div className={cl.prizeText}>
+                            <div className={cl.plus}>
+                                <div className={cl.one} />
+                                <div className={cl.two} />
+                            </div>
+
+                            <div className={cl.text}>
+                                СРЕДИ УЧАСТНИКОВ КУРСА РАНДОМНО БУДЕТ ПРОВЕДЕН РОЗЫГРЫШ МИКРОФОНА RODE NT-1A
+                            </div>
                         </div>
 
-                        <div className={cl.text}>
-                            СРЕДИ УЧАСТНИКОВ КУРСА РАНДОМНО БУДЕТ ПРОВЕДЕН РОЗЫГРЫШ МИКРОФОНА RODE NT-1A
+                        <img className={cl.microIMG} src={micro} />
+                    </motion.div>
+
+                    <motion.div 
+                        className={cl.data}
+                        variants={cardAnimationRight}
+                        transition={{
+                            duration: 1
+                        }}
+                    >
+                        <div className={cl.start}>
+                            Старт продаж с <span className="blueText">11.11</span> по <span className="blueText">27.11</span>
                         </div>
-                    </div>
 
-                    <img className={cl.microIMG} src={micro} />
-                </div>
+                        <div className={cl.textDate}>
+                            Даты прохождения курса :
+                        </div>
 
-                <div className={cl.data}>
-                    <div className={cl.start}>
-                        Старт продаж с <span className="blueText">11.11</span> по <span className="blueText">27.11</span>
-                    </div>
-
-                    <div className={cl.textDate}>
-                        Даты прохождения курса :
-                    </div>
-
-                    <div className={cl.date}>
-                        <span className="blueText">28 ноября</span> 2022 - <span className="blueText">30 декабря</span> 2022
-                    </div>
+                        <div className={cl.date}>
+                            <span className="blueText">28 ноября</span> 2022 - <span className="blueText">30 декабря</span> 2022
+                        </div>
+                    </motion.div>
                 </div>
 
             </div>
-        </div>
+        </motion.div>
     )
 }
 
