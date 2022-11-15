@@ -65,6 +65,12 @@
     box-shadow: 0 0 4px #39f3fd;
 }
 
+.getCourse{
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+}
+
 .intro{
     font-style: normal;
     font-weight: 700;

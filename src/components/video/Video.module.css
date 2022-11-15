@@ -6,13 +6,54 @@
     padding-bottom: 100px;
 }
 
-.video{
+.videoWithBorder{
+    position: relative;
     width: 100%;
+    height: fit-content;
+}
+
+.one{
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background: #0da7af;
+    border-radius: 10px;
+}
+
+.two{
+    position: absolute;
+    right: 2%;
+    top: -5%;
+    height: 5px;
+    width: 96%;
+    background: #0da7af;
+    border-radius: 10px;
+}
+
+.three{
+    position: absolute;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    background: #0da7af;
+    border-radius: 10px;
+}
+
+.four{
+    position: absolute;
+    right: 2%;
+    bottom: -5%;
+    height: 5px;
+    width: 96%;
+    background: #0da7af;
+    border-radius: 10px;
+}
+
+.video{
+    width: 96%;
     height: 500px;
     margin: 0 auto;
-    border: 7px solid #00F0FD;
-    border-radius: 75px;
-    box-shadow: 0 0 4px #39f3fd;
+    overflow:hidden;
 }
 
 @media screen and (max-width: 900px) {
@@ -30,6 +71,5 @@
 @media screen and (max-width: 500px) {
     .video{
         height: 200px;
-        border-radius: 30px;
     }
 }

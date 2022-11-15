@@ -137,7 +137,7 @@ const Tarrifs = () => {
                 </motion.div>
 
                 <div className={cl.variants}>
-                    <motion.div 
+                    <motion.div
                         className={cl.small}
                         variants={cardAnimationLeft}
                         transition={{
@@ -168,7 +168,7 @@ const Tarrifs = () => {
                                     <div className={cl.closeShop}>{commentData}</div>
                             }
                             <div className={cl.comment}>доступна рассрочка</div>
-                            <div className={cl.number}>количество мест - 30</div>
+                            <div className={cl.number}>количество мест - 20</div>
                         </div>
 
                         {
@@ -180,7 +180,10 @@ const Tarrifs = () => {
                                         {
                                             increasePriceDay !== 0
                                                 ?
-                                                increasePriceDay + correctWordDay(increasePriceDay) + " "
+                                                <div style={{ display: "flex" }}>
+                                                    <div className="blueText">{increasePriceDay}&nbsp;</div>
+                                                    {correctWordDay(increasePriceDay)}&nbsp;
+                                                </div>
                                                 :
                                                 ""
                                         }
@@ -188,7 +191,10 @@ const Tarrifs = () => {
                                         {
                                             increasePriceHour !== 0
                                                 ?
-                                                increasePriceHour + correctWordHour(increasePriceHour)
+                                                <div style={{ display: "flex" }}>
+                                                    <div className="blueText">{increasePriceHour}&nbsp;</div>
+                                                    {correctWordHour(increasePriceHour) + " "}
+                                                </div>
                                                 :
                                                 ""
                                         }
@@ -205,9 +211,13 @@ const Tarrifs = () => {
                                 :
                                 <div />
                         }
+
+                        <div className={cl.buttonBuy}>
+                            <a href="https://milianovoid.getcourse.ru/miliandelaetmillion" target="_blank">Оформить</a>
+                        </div>
                     </motion.div>
 
-                    <motion.div 
+                    <motion.div
                         variants={cardAnimationRight}
                         className={cl.big}
                         transition={{
@@ -248,7 +258,7 @@ const Tarrifs = () => {
                                     <div className={cl.closeShop}>{commentData}</div>
                             }
                             <div className={cl.comment}>доступна рассрочка</div>
-                            <div className={cl.number}>количество мест - 10</div>
+                            <div className={cl.number}>количество мест - 6</div>
                         </div>
 
                         {
@@ -260,7 +270,10 @@ const Tarrifs = () => {
                                         {
                                             increasePriceDay !== 0
                                                 ?
-                                                increasePriceDay + correctWordDay(increasePriceDay) + " "
+                                                <div style={{ display: "flex" }}>
+                                                    <div className="blueText">{increasePriceDay}&nbsp;</div>
+                                                    {correctWordDay(increasePriceDay)}&nbsp;
+                                                </div>
                                                 :
                                                 ""
                                         }
@@ -268,7 +281,10 @@ const Tarrifs = () => {
                                         {
                                             increasePriceHour !== 0
                                                 ?
-                                                increasePriceHour + correctWordHour(increasePriceHour)
+                                                <div style={{ display: "flex" }}>
+                                                    <div className="blueText">{increasePriceHour}&nbsp;</div>
+                                                    {correctWordHour(increasePriceHour) + " "}
+                                                </div>
                                                 :
                                                 ""
                                         }
@@ -286,11 +302,14 @@ const Tarrifs = () => {
                                 <div />
                         }
 
+                        <div className={cl.buttonBuy}>
+                            <a href="https://milianovoid.getcourse.ru/miliandelaetmillion" target="_blank">Оформить</a>
+                        </div>
                     </motion.div>
                 </div>
 
                 <div className={cl.info}>
-                    <motion.div 
+                    <motion.div
                         className={cl.prize}
                         variants={cardAnimationLeft}
                         transition={{
@@ -311,7 +330,7 @@ const Tarrifs = () => {
                         <img className={cl.microIMG} src={micro} />
                     </motion.div>
 
-                    <motion.div 
+                    <motion.div
                         className={cl.data}
                         variants={cardAnimationRight}
                         transition={{
